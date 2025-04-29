@@ -14,6 +14,8 @@ public:
             res[it]++;
         }
 
+        // o(n)
+
         for(int i=0;i<101;i++){
             if(res[i]==nums.size()){
                 // count+=(int)(factorial(res[i])/(factorial(2)*factorial(res[i]-2)));
@@ -25,6 +27,7 @@ public:
                 // count+=(int)(factorial(res[i])/(factorial(2)*factorial(res[i]-2)));
             }
         }
+        // O(n2)
         // for(int i=0;i<nums.size();i++){
         //     for(int j=0;j<nums.size();j++){
         //         if(nums[i]==nums[j] && i<j){
